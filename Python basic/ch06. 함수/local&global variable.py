@@ -1,0 +1,17 @@
+# -*- coding: EUC-KR -*-
+gun = 10
+
+def checkpoint(soldiers):
+    global gun
+    gun = gun - soldiers
+    print("[ÇÔ¼ö ³»] ³²Àº ÃÑ : {0}".format(gun))
+
+def checkpoint_ret(gun, soldiers):
+    gun = gun - soldiers
+    print("[ÇÔ¼ö ³»] ³²Àº ÃÑ : {0}".format(gun))
+    return gun
+
+print("ÀüÃ¼ ÃÑ : {0}".format(gun))
+gun = checkpoint_ret(gun, 2)
+print("³²Àº ÃÑ : {0}".format(gun))
+print(gun)
